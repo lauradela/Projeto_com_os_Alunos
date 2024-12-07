@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo de Pizzas</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Catálogo de Pizzas</h1>
+      <h1>Catálogo de Pizzas</h1>
     </header>
     <main>
-        <div class="pizza" id="margherita">
-            <img src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/a82cb034-293a-4903-a4e2-974fc4081ac8?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=kMqgeblXaLg3XWsYsxgNWd4rh%2BY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH" alt="">
-            <h2>Margherita</h2>
-            <p>Descrição: Tomate, mussarela e manjericão.</p>
-            <p>R$ 63,90</p>
-            <button onclick="comprarMargherita()">Finalizar compra</button>
-        </div>
-        <div class="pizza" id="pepperoni">
-            <img src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/3c92fbc1-4090-40ce-a31c-58c8d518edc6?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=FbWOeATi0DyXH1mpEabgUL%2FtTVU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH" alt="">
-            <h2>Pepperoni</h2>
-            <p>Descrição: Mussarela e pepperoni.</p>
-            <p>R$ 71,90</p>
-            <button onclick="comprarPepperoni()">Finalizar compra</button>
-        </div>
-        <div class="pizza" id="portuguesa">
-            <img src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/f1d5c503-dbc6-440b-b78f-a051d084a76f?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=4TEGlDB9JAql8GOtl2uv0JYwYHA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH" alt="">
-            <h2>Portuguesa</h2>
-            <p>Descrição: Mussarela, presunto, ovo, cebola, azeitonas e pimentão.</p>
-            <p>R$ 62,90</p>
-            <button onclick="comprarPortuguesa()">Finalizar compra</button>
-        </div>
-        <div class="pizza" id="quatro-queijos">
-            <img src="https://vovozitareceitas.com/wp-content/uploads/2020/09/Pizza-de-quatro-queijos.jpg" alt="">
-            <h2>Quatro Queijos</h2>
-            <p>Descrição: Mussarela, gorgonzola, parmesão e provolone.</p>
-            <p>R$ 55,90</p>
-            <button onclick="comprarQueijos()">Finalizar compra</button>
-        </div>
-        <div class="pizza" id="calabresa">
-            <img src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/b018f459-2ee7-41d6-bf5a-2377d971069a?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=Ff3U0eLk9%2BCYNfy%2BxPvP2qbPCFg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH" alt="">
-            <h2>Calabresa</h2>
-            <p>Descrição: Mussarela, calabresa e cebola.</p>
-            <p>R$ 49,90</p>
-            <button onclick="comprarCalabresa()">Finalizar compra</button>
-        </div>        
-    </main>    
-</body>
+      <div class="pizza" id="margherita">
+        <img
+          src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/a82cb034-293a-4903-a4e2-974fc4081ac8?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=kMqgeblXaLg3XWsYsxgNWd4rh%2BY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH"
+          alt=""
+        />
+        <h2>Margherita</h2>
+        <p>Descrição: Tomate, mussarela e manjericão.</p>
+        <p>R$ 63,90</p>
+        <button onclick="comprarMargherita()">Finalizar compra</button>
+      </div>
+      <div class="pizza" id="pepperoni">
+        <img
+          src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/3c92fbc1-4090-40ce-a31c-58c8d518edc6?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=FbWOeATi0DyXH1mpEabgUL%2FtTVU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH"
+          alt=""
+        />
+        <h2>Pepperoni</h2>
+        <p>Descrição: Mussarela e pepperoni.</p>
+        <p>R$ 71,90</p>
+        <button onclick="comprarPepperoni()">Finalizar compra</button>
+      </div>
+      <div class="pizza" id="portuguesa">
+        <img
+          src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/f1d5c503-dbc6-440b-b78f-a051d084a76f?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=4TEGlDB9JAql8GOtl2uv0JYwYHA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH"
+          alt=""
+        />
+        <h2>Portuguesa</h2>
+        <p>
+          Descrição: Mussarela, presunto, ovo, cebola, azeitonas e pimentão.
+        </p>
+        <p>R$ 62,90</p>
+        <button onclick="comprarPortuguesa()">Finalizar compra</button>
+      </div>
+      <div class="pizza" id="quatro-queijos">
+        <img
+          src="https://vovozitareceitas.com/wp-content/uploads/2020/09/Pizza-de-quatro-queijos.jpg"
+          alt=""
+        />
+        <h2>Quatro Queijos</h2>
+        <p>Descrição: Mussarela, gorgonzola, parmesão e provolone.</p>
+        <p>R$ 55,90</p>
+        <button onclick="comprarQueijos()">Finalizar compra</button>
+      </div>
+      <div class="pizza" id="calabresa">
+        <img
+          src="https://whereby-file-sharing.s3.eu-west-1.amazonaws.com/8e48928a-7d9d-4c82-8afa-958c7e97b35d/b018f459-2ee7-41d6-bf5a-2377d971069a?AWSAccessKeyId=ASIA34BPX6BSVXXRCRBX&Expires=1733616108&Signature=Ff3U0eLk9%2BCYNfy%2BxPvP2qbPCFg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEID%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJHMEUCIELgyZ%2B01nfsyIR01yFINEDwqhBi5S1LinlDuRU12JYwAiEAxqFhAPdvjoPFPz0ty048mPBGIj7mtcU9tSIyw7ePs5YqswUIORAAGgw4MTYxNDM5MjEyNTMiDP2cYvCPipA8mGtmNyqQBcxIHK51wKKEeqnq77M%2B7wZOgYZh5yvDxhYJASMd4h5LXOxNbXq8H69q6BhXg4QUbsKcm3RAtih6B2yeCa29W%2BDNZiSCE3yF5yRkGQAX%2F0prZhLEZKTNy7lY3vO1Zbf4p0UD%2B7xvGd5BkTh7Y49IQLint67gWIM8O11B1KIpGW4T%2Fn1i8f1jKOZc45k1g8cPSbTMsPxzXU%2BKKH9FhNn4VsJzTlzDwueRVe5yBVEgnRcA7Bsv2foH9lXQ50ynrCPfztE99%2FhBqoE5iB%2B%2BWLwKCNbsRGOwhk2OhyBfb2aXGp1py6zlOW4J%2BTRZDZWCiPEDqJPGkidi4%2FoiYe3SE2v0AZd0eJLGQ4kLN%2B%2B6%2Bc4wakntYbQX8OVJkDedrHwQVwQV%2BQ%2FOZDDqWhQdwtSHIacJzD4lmEIEgorVqcUsy0%2FHiYYVRVDpbuCEGbytTBEj56KkCZXHt71APxq7xMPiNNq4H%2FrLJ8Qg3vj0Hxa6e3m%2FQlM7Kjkyg1mmr8PznIPdKCnkKGdVCMpaMALmL08uO4fOuM3mYateKqEtJ3juwiss4ktB%2FQ6FMzxOKnwl2oRGJcCFj4RLdTFeSlOeYHKilElpHWIlVz0xHgEukLzIDQUdgD6repAGr2rHe1aa5V9Owz2txzOP%2FOXkZQWhc8OpUst3g7V%2FtuP8LsJiu2dKc9eHER31yJ5fqpNLjtA5LpJujGPesRsA8mlsjg%2Bt4eiQatFoFcQ2NYRwKPsdKpgldt606V9G7EAJ0w%2Fc%2BsRDQyAnjybaEaNIQUnqx0vtQPwT%2BWrKbpneAZI5sATz2ZQk8I8%2FhcCesuCTRPskCYgKXcajOL2RC%2BPBUhyhC9UzRrJZxSVi%2FmmaQhke8g1y4IKgYkij9%2F5BMPqVzroGOrEB6Nsl6%2Fo8NkEqGiW7UrFXFKGSU22%2BUiVWRiea%2Byb0HR%2B%2BiVj9E79ccGgO8UR%2B5wCwOzDAfHms92LwMqM14Q%2BfE3v7sACRTRsgVnHegHWwjWALWzPJJdfpfBDwrj2Bi%2Bp%2FjrpBzQF%2Be%2FLxtLd7e%2BXvBBpBxfDOEZ0fc8UZ6I9IOoGbY1ubU4hce4iicqVGolBxcQdVp0byu6l%2FH5yCvyhy0fGDZJBtsGEwoJLziM10Y2KH"
+          alt=""
+        />
+        <h2>Calabresa</h2>
+        <p>Descrição: Mussarela, calabresa e cebola.</p>
+        <p>R$ 49,90</p>
+        <button onclick="comprarCalabresa()">Finalizar compra</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Pizza Delivery. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
