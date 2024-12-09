@@ -16,12 +16,32 @@
         <h2>Margherita</h2>
         <p>Descrição: Tomate, mussarela e manjericão.</p>
         <p>R$ 63,90</p>
+
+        <div class="quantidade">
+          <button onclick="decrementIncrement('qtd-marguerita', 'minus')">
+            -
+          </button>
+          <button onclick="decrementIncrement('qtd-marguerita', 'plus')">
+            +
+          </button>
+          <p id="qtd-marguerita">0</p>
+        </div>
       </div>
+
       <div class="pizza" id="pepperoni">
         <img src="./assets/images/peperone.jpg" alt="pizza_peperone" />
         <h2>Pepperoni</h2>
         <p>Descrição: Mussarela e pepperoni.</p>
         <p>R$ 71,90</p>
+        <div class="quantidade">
+          <button onclick="decrementIncrement('qtd-peperoni', 'minus')">
+            -
+          </button>
+          <button onclick="decrementIncrement('qtd-peperoni', 'plus')">
+            +
+          </button>
+          <p id="qtd-peperoni">0</p>
+        </div>
       </div>
       <div class="pizza" id="portuguesa">
         <img src="./assets/images/portuguesa.jpg" alt="pizza_portuguesa" />
@@ -30,6 +50,15 @@
           Descrição: Mussarela, presunto, ovo, cebola, azeitonas e pimentão.
         </p>
         <p>R$ 62,90</p>
+        <div class="quantidade">
+          <button onclick="decrementIncrement('qtd-portuguesa', 'minus')">
+            -
+          </button>
+          <button onclick="decrementIncrement('qtd-portuguesa', 'plus')">
+            +
+          </button>
+          <p id="qtd-portuguesa">0</p>
+        </div>
       </div>
       <div class="pizza" id="quatro-queijos">
         <img
@@ -39,12 +68,28 @@
         <h2>Quatro Queijos</h2>
         <p>Descrição: Mussarela, gorgonzola, parmesão e provolone.</p>
         <p>R$ 55,90</p>
+        <div class="quantidade">
+          <button onclick="decrementIncrement('qtd-queijos', 'minus')">
+            -
+          </button>
+          <button onclick="decrementIncrement('qtd-queijos', 'plus')">+</button>
+          <p id="qtd-queijos">0</p>
+        </div>
       </div>
       <div class="pizza" id="calabresa">
         <img src="./assets/images/pizza_calabresa.png" alt="pizza_calabresa" />
         <h2>Calabresa</h2>
         <p>Descrição: Mussarela, calabresa e cebola.</p>
         <p>R$ 49,90</p>
+        <div class="quantidade">
+          <button onclick="decrementIncrement('qtd-calabresa', 'minus')">
+            -
+          </button>
+          <button onclick="decrementIncrement('qtd-calabresa', 'plus')">
+            +
+          </button>
+          <p id="qtd-calabresa">0</p>
+        </div>
       </div>
 
       <div class="btn-buy">
